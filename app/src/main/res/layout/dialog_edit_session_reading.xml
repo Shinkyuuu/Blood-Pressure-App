@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/activity_exit_reading_dialog_bg">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editSysLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/enter_session_data"
+        android:gravity="center"
+        android:minHeight="60dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        app:hintTextAppearance="@style/HintText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.6">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editSYS"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/enter_data_bg"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:hint="@string/SYSTOLIC"
+            android:inputType="number"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColorHint="@color/newLightRed"
+            android:textSize="25sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editDyLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/enter_session_data"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        app:hintTextAppearance="@style/HintText"
+        app:layout_constraintEnd_toEndOf="@+id/editSysLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editSysLayout"
+        app:layout_constraintTop_toBottomOf="@+id/editSysLayout"
+        app:layout_constraintWidth_percent="0.6">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editDY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/enter_data_bg"
+            android:gravity="center"
+            android:hint="@string/DIASTOLIC"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="number"
+            android:textColorHint="@color/newLightRed"
+            android:textSize="25sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editHrLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/enter_session_data"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        app:hintTextAppearance="@style/HintText"
+        app:layout_constraintEnd_toEndOf="@+id/editDyLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editDyLayout"
+        app:layout_constraintTop_toBottomOf="@+id/editDyLayout"
+        app:layout_constraintWidth_percent="0.6">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editHR"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@drawable/enter_data_bg"
+            android:gravity="center"
+            android:hint="@string/PULSE"
+            android:fontFamily="@font/poppins_medium"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            android:textColorHint="@color/newLightRed"
+            android:textSize="25sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/editDoneBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_yes_no_bg"
+        android:text="@string/DONE"
+        android:fontFamily="@font/assistant_semibold"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editHrLayout"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintHeight_percent="0.09"/>
+
+    <Button
+        android:id="@+id/editCancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/button_yes_no_bg"
+        android:text="@string/CANCEL"
+        android:fontFamily="@font/assistant_semibold"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editDoneBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/editDoneBtn"
+        app:layout_constraintTop_toTopOf="@+id/editDoneBtn"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintHeight_percent="0.09"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

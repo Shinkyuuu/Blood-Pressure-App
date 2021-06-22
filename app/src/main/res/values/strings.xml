@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">BloodPsrApp</string>
+    <string name="BP_READINGS">Sessions</string>
+    <string name="ALL_READINGS">Readings</string>
+    <string name="SEND_READINGS">Send</string>
+    <string name="AM"> AM</string>
+    <string name="PM">PM </string>
+    <string name="AMPM">AMPM</string>
+    <string name= "DATE">Date</string>
+    <string name= "DAY">Day</string>
+    <string name="TIME">Time</string>
+    <string name="TAKEN">Taken</string>
+    <string name="ENTRIES">Entries</string>
+    <string name="SDP">S/D-P</string>
+    <string name="COPY">COPY</string>
+    <string name="EXCLAIM">!</string>
+    <string name="SYSTOLIC">Systolic</string>
+    <string name="DIASTOLIC">Diastolic</string>
+    <string name="PULSE">Pulse</string>
+    <string name="ADD">ADD</string>
+    <string name="END">END</string>
+    <string name="READINGS">Readings</string>
+    <string name="SESSIONS">Sessions</string>
+    <string name="STOREREADINGS">Store readings?\n(Not Copyable)</string>
+    <string name="AREYOUSURE">Are you Sure?</string>
+    <string name="YES">YES</string>
+    <string name="NO">NO</string>
+    <string name="DONE">DONE</string>
+    <string name="CANCEL">CANCEL</string>
+    <string name="SYS">SYS</string>
+    <string name="DI">DI</string>
+    <string name="PU">PU</string>
+    <string name="OK">OK</string>
+    <string name="GRAPHINFO">This graph represents the sum of your Systolic and Diastolic Pressure.
+        This number should typically be below 200 indicated with a red line. </string>
+
+</resources>

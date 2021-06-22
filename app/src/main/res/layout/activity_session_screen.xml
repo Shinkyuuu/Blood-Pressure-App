@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.SessionScreen">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/session_gradient_animation"
+        android:id="@+id/sessionBG">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/enterSysLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
+            android:background="@drawable/enter_session_data"
+            android:minHeight="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.6">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/enterSYS"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/enter_data_bg"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:hint="@string/SYSTOLIC"
+                android:inputType="number"
+                android:maxLength="3"
+                android:paddingStart="30dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="30dp"
+                android:paddingBottom="5dp"
+                android:textColorHint="@color/newLightRed"
+                android:textSize="25sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/enterDyLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/enter_session_data"
+            app:layout_constraintEnd_toEndOf="@+id/enterSysLayout"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/enterSysLayout"
+            app:layout_constraintTop_toBottomOf="@+id/enterSysLayout"
+            app:layout_constraintWidth_percent="0.6">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/enterDY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:background="@drawable/enter_data_bg"
+                android:maxLength="3"
+                android:gravity="center"
+                android:hint="@string/DIASTOLIC"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="number"
+                android:textColorHint="@color/newDarkRed"
+                android:textSize="25sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/enterHrLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/enter_session_data"
+            app:layout_constraintEnd_toEndOf="@+id/enterDyLayout"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/enterDyLayout"
+            app:layout_constraintTop_toBottomOf="@+id/enterDyLayout"
+            app:layout_constraintWidth_percent="0.6">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/enterHR"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:background="@drawable/enter_data_bg"
+                android:maxLength="3"
+                android:gravity="center"
+                android:hint="@string/PULSE"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:textColorHint="@color/newLightRed"
+                android:textSize="25sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/okBtn"
+            android:layout_width="110dp"
+            android:layout_height="0dp"
+            android:background="@drawable/button_yes_no_bg"
+            android:text="@string/ADD"
+            android:fontFamily="@font/assistant_semibold"
+            android:textSize="23sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.06"
+            app:layout_constraintHorizontal_bias="0.253"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterHrLayout"
+            app:layout_constraintVertical_bias="0.174" />
+
+        <Button
+            android:id="@+id/endSessionBtn"
+            android:layout_width="110dp"
+            android:layout_height="0dp"
+            android:background="@drawable/button_yes_no_bg"
+            android:text="@string/END"
+            android:fontFamily="@font/assistant_semibold"
+            android:textSize="23sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.06"
+            app:layout_constraintHorizontal_bias="0.746"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterHrLayout"
+            app:layout_constraintVertical_bias="0.174" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@drawable/view_previous_readings_bg"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="55dp"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/READINGS"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="-5dp"
+            android:layout_marginEnd="-5dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/prevSessionDataRV"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="47dp"/>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

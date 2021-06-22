@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.DrDataScreen">
+
+    <Button
+        android:id="@+id/drDataBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="51dp"
+        android:minWidth="51dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_dr_data_back_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:paddingEnd="10dp"
+        android:layout_marginBottom="2dp"
+        android:elevation="2dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/image_arrow"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="@+id/drDataBackBtn"
+        app:layout_constraintEnd_toEndOf="@+id/drDataBackBtn"
+        app:layout_constraintWidth_percent="0.1"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="@+id/drDataBackBtn"
+        app:layout_constraintTop_toTopOf="@+id/drDataBackBtn"
+        app:layout_constraintVertical_bias="0.578" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/activity_dr_data_bg"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/drDateView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/DATE"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/assistant_semibold"
+        app:layout_constraintBottom_toBottomOf="@+id/drAMPMView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/drAMPMView"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.26" />
+
+    <TextView
+        android:id="@+id/drDayView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:gravity="center"
+        android:text="@string/DAY"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/assistant_semibold"
+        app:layout_constraintBottom_toBottomOf="@+id/drAMPMView"
+        app:layout_constraintStart_toEndOf="@+id/drDateView"
+        app:layout_constraintTop_toTopOf="@+id/drAMPMView"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.10" />
+
+    <TextView
+        android:id="@+id/drAMPMView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:text="@string/TAKEN"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/assistant_semibold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/drDayView"
+        app:layout_constraintTop_toBottomOf="@+id/drDataBackBtn"
+        app:layout_constraintVertical_bias="0.862"
+        app:layout_constraintWidth_percent="0.13" />
+
+    <TextView
+        android:id="@+id/drCountView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="@string/ENTRIES"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/assistant_semibold"
+        app:layout_constraintBottom_toBottomOf="@+id/drAMPMView"
+        app:layout_constraintStart_toEndOf="@+id/drAMPMView"
+        app:layout_constraintTop_toTopOf="@+id/drAMPMView"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintWidth_percent="0.16" />
+
+    <TextView
+        android:id="@+id/drBPDataView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="SDP"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/assistant_semibold"
+        app:layout_constraintBottom_toBottomOf="@+id/drAMPMView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/drCountView"
+        app:layout_constraintTop_toTopOf="@+id/drAMPMView"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/drDataRV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/copyBtn"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/copyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_dr_data_bg"
+        android:text="@string/COPY"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drDataRV"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

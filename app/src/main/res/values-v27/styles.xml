@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="colorPrimary">@color/newLightRed</item>
+        <item name="colorPrimaryDark">@color/mainBG</item>
+        <item name="colorAccent">@color/newLightRed</item>
+        <item name="android:textColorPrimary">@color/newLightBlack</item>
+        <item name="android:navigationBarColor">@color/mainBG</item>
+        <item name="android:textColor">@color/newLightBlack</item>
+    </style>
+</resources>

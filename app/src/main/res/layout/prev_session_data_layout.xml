@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/prevDataBG"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/button_dr_data_bg"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/prevSYSData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/enter_session_data"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:minWidth="50dp"
+        android:padding="5dp"
+        android:text="@string/SYS"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/prevDataBG"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/prevDataBG"
+        app:layout_constraintVertical_bias="0.578" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/SYS"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/prevSYSData"
+        app:layout_constraintStart_toStartOf="@+id/prevDataBG"
+        app:layout_constraintTop_toTopOf="@+id/prevSYSData"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/prevDYData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/enter_session_data"
+        android:gravity="center"
+        android:minWidth="50dp"
+        android:padding="5dp"
+        android:text="@string/DI"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/prevSYSData"
+        app:layout_constraintStart_toEndOf="@+id/textVi0w4"
+        app:layout_constraintTop_toTopOf="@+id/prevSYSData"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textVi0w4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/DI"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/prevDYData"
+        app:layout_constraintStart_toEndOf="@+id/prevSYSData"
+        app:layout_constraintTop_toTopOf="@+id/prevDYData"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/prevHRData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/enter_session_data"
+        android:gravity="center"
+        android:minWidth="50dp"
+        android:padding="5dp"
+        android:text="@string/PU"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/prevDYData"
+        app:layout_constraintStart_toEndOf="@+id/textVi0w64"
+        app:layout_constraintTop_toTopOf="@+id/prevDYData"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textVi0w64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/PU"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/prevHRData"
+        app:layout_constraintStart_toEndOf="@+id/prevDYData"
+        app:layout_constraintTop_toTopOf="@+id/prevHRData"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/editPrevDataBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/button_dr_data_back_bg"
+        android:backgroundTint="@color/newLightRed"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/prevHRData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toEndOf="@+id/prevHRData"
+        app:layout_constraintTop_toTopOf="@+id/prevHRData"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:elevation="200dp"
+        android:src="@drawable/image_edit_reading"
+        app:layout_constraintBottom_toBottomOf="@+id/editPrevDataBtn"
+        app:layout_constraintEnd_toEndOf="@+id/editPrevDataBtn"
+        app:layout_constraintStart_toStartOf="@+id/editPrevDataBtn"
+        app:layout_constraintTop_toTopOf="@+id/editPrevDataBtn"
+        app:layout_constraintWidth_percent="0.06"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

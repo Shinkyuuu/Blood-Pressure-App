@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/activity_dialog_bg">
+
+    <TextView
+        android:id="@+id/finishSessionCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="@string/AREYOUSURE"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/yesSessionEndBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/button_yes_no_bg"
+        android:text="@string/YES"
+        android:textSize="20sp"
+        android:fontFamily="@font/assistant_semibold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finishSessionCheck"
+        app:layout_constraintHeight_percent="0.21"/>
+
+    <Button
+        android:id="@+id/noSessionEndBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="76dp"
+        android:background="@drawable/button_yes_no_bg"
+        android:text="@string/NO"
+        android:textSize="20sp"
+        android:fontFamily="@font/assistant_semibold"
+        app:layout_constraintBottom_toBottomOf="@+id/yesSessionEndBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/yesSessionEndBtn"
+        app:layout_constraintTop_toTopOf="@+id/yesSessionEndBtn"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintHeight_percent="0.21"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

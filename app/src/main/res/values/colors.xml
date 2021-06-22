@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F78C94</color>
+    <color name="colorPrimaryDark">#FB7272</color>
+    <color name="colorAccent">#FB7272</color>
+    <color name="white">#FFFFFF</color>
+    <color name="mainBG">#F9F9F9</color>
+
+    <color name="newLightRed">#F78C94</color>
+    <color name="newDarkRed">#FF4D26</color>
+    <color name="newRed">#FB7272</color>
+    <color name="newLightPurple">#C7A9FD</color>
+    <color name="newPurple">#9C66FC</color>
+    <color name="newLightYellow">#FAB395</color>
+    <color name="newYellow">#F5B275</color>
+    <color name="newAMLightPeach">#ffb891</color>
+    <color name="newAMPeach">#FFB199</color>
+    <color name="newPMLightBlue">#A6A5FF</color>
+    <color name="newDarkBlue">#514EDB</color>
+    <color name="newPMPurple">#CE8FFF</color>
+    <color name="newDarkWhite">#EFE6F4</color>
+    <color name="newDarkLightWhite">#e8e8e8</color>
+    <color name="newDarkerWhite">#C4C4C4</color>
+    <color name="limitLineRed">#F78C94</color>
+    <color name="graphRed">#DC6880</color>
+    <color name="graphBlue">#7367FF</color>
+    <color name="newLightBlack">#202020</color>
+
+</resources>
