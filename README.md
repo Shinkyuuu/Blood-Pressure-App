@@ -5,7 +5,7 @@
 
 ![Border](https://github.com/Shinkyuuu/Blood-Pressure-App/blob/master/Repo%20Images/Repo%20Border.png)
 
-🩸 Adding Blood Pressure Readings 🩸 | 📈 Editing and Removing Readings 📉 | 💌 Sending Readings 💌
+🩸 Adding Blood Pressure Readings 🩸 | 📈 Editing / Removing Readings 📉 | 💌 Sending Readings 💌
 ------------ | ------------- | -------------
 <img src="http://g.recordit.co/jaszAL5Jj4.gif" width=450> | <img src="http://g.recordit.co/bEhNTEN443.gif" width=460> | <img src="http://g.recordit.co/DPTFreNk7P.gif" width=450>
 
