@@ -32,4 +32,6 @@ This is an app that aids in the recording, storing, and sending of blood pressur
 
 ![Border](https://github.com/Shinkyuuu/Blood-Pressure-App/blob/master/Repo%20Images/Repo%20Border.png)
 
+* Each of these screens were designed in Figma and brought to life with XML
+
 ![Image of every screen](https://github.com/Shinkyuuu/Blood-Pressure-App/blob/master/Repo%20Images/Repo%20Screen%20Image.PNG)
