@@ -5,7 +5,7 @@
 
 ![Border](https://github.com/Shinkyuuu/Blood-Pressure-App/blob/master/Repo%20Images/Repo%20Border.png)
 
-🩸 Adding Blood Pressure Readings 🩸 | 📈 Editing / Removing Readings 📉 | 💌 Sending Readings 💌
+🩸 Add Blood Pressure Readings 🩸 | 📈 Edit / Remove Readings 📉 | 💌 Send Readings 💌
 ------------ | ------------- | -------------
 <img src="http://g.recordit.co/jaszAL5Jj4.gif" width=450> | <img src="http://g.recordit.co/bEhNTEN443.gif" width=460> | <img src="http://g.recordit.co/DPTFreNk7P.gif" width=450>
 
@@ -13,7 +13,6 @@
 
 ![Border](https://github.com/Shinkyuuu/Blood-Pressure-App/blob/master/Repo%20Images/Repo%20Border.png)
 
-This is an app designed to simplify the act of jotting notes down, create shoppings lists, or to make to-do tasks. With no unnessary clutter, this app allows the user to mark things down on the fly. 
 This is an app that aids in the recording, storing, and sending of blood pressure readings. The main/intended purpose of it is to be used to send blood pressure reading to the user's doctor for medical purposes. It can be difficult to keep track of when you last took your blood pressure, let alone to notice when it might be heading in the wrong direction. This app allows you to not only store your readings, but to show you the trend of they progress, split up into morning and evening readings. 
 
 <h3>◻️ Features</h3>
