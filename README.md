@@ -1,4 +1,4 @@
-![Note It Banner](https://github.com/Shinkyuuu/Blood-Pressure-App/blob/master/Repo%20Images/Repo%20Banner.png)
+![BP Monitor Banner](https://github.com/Shinkyuuu/Blood-Pressure-App/blob/master/Repo%20Images/Repo%20Banner.png)
 
 <h1 align="center">💖 BP Monitor 💖</h1>
 <p align="center"><b>An app to help the user record, store, and send blook pressure readings!</b></p>
@@ -32,4 +32,4 @@ This is an app that aids in the recording, storing, and sending of blood pressur
 
 ![Border](https://github.com/Shinkyuuu/Blood-Pressure-App/blob/master/Repo%20Images/Repo%20Border.png)
 
-![Border](https://github.com/Shinkyuuu/Blood-Pressure-App/blob/master/Repo%20Images/Repo%20Screen%20Image.PNG)
+![Image of every screen](https://github.com/Shinkyuuu/Blood-Pressure-App/blob/master/Repo%20Images/Repo%20Screen%20Image.PNG)
