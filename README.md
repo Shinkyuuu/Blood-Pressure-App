@@ -1,6 +1,6 @@
 ![BP Monitor Banner](https://github.com/Shinkyuuu/Blood-Pressure-App/blob/master/Repo%20Images/Repo%20Banner.png)
 
-<h1 align="center">💖 BP Monitor 💖</h1>
+<h1 align="center">:) BP Monitor :)</h1>
 <p align="center"><b>An app to help the user record, store, and send blood pressure readings!</b></p>
 
 ![Border](https://github.com/Shinkyuuu/Blood-Pressure-App/blob/master/Repo%20Images/Repo%20Border.png)
@@ -13,7 +13,7 @@
 
 ![Border](https://github.com/Shinkyuuu/Blood-Pressure-App/blob/master/Repo%20Images/Repo%20Border.png)
 
-BP Monitor is an app that aids in the recording, storing, and sending of blood pressure readings. The main/intended purpose of it is to be used to send blood pressure reading to the user's doctor for medical purposes. It can be difficult to keep track of when you last took your blood pressure, let alone to notice when it might be heading in the wrong direction. This app allows you to not only store your readings, but to show you the trend of their progress, split up into morning and evening readings. 
+BP Monitor is an app that aids in the recording, storing, and sending of blood pressure readings. The main/intended purpose of it is to be used to send blood pressure readings to the user's doctor for medical purposes. It can be difficult to keep track of when you last took your blood pressure, let alone to notice when it might be heading in the wrong direction. This app allows you to not only store your readings, but to show you the trend of their progress, split up into morning and evening readings. 
 
 <h3>◻️ Features</h3>
 
